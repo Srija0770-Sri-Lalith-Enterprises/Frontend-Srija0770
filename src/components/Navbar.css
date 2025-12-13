@@ -1,0 +1,329 @@
+/* Main Navigation */
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 2px solid #138808;
+  box-shadow: 0 6px 25px rgba(19, 136, 8, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 10px 40px rgba(19, 136, 8, 0.18);
+  border-bottom-width: 4px;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #138808;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.navbar-logo::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #138808, #ff2929);
+  transition: width 0.3s ease;
+}
+
+.navbar-logo:hover::after {
+  width: 100%;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  color: #0f6b08;
+}
+
+.navbar-logo img {
+  height: 45px;
+  width: auto;
+  filter: drop-shadow(0 3px 6px rgba(19, 136, 8, 0.25));
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover img {
+  filter: drop-shadow(0 5px 10px rgba(19, 136, 8, 0.35));
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 1 rem;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.navbar-menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #138808, #ff2929);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.navbar-menu a:hover::before {
+  width: 80%;
+}
+
+.navbar-menu a:hover {
+  color: #138808;
+  background: rgba(19, 136, 8, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(19, 136, 8, 0.15);
+}
+
+.navbar-menu a.active {
+  color: #138808;
+  background: rgba(19, 136, 8, 0.12);
+  font-weight: 600;
+  transform: translateY(-1px);
+}
+
+.navbar-menu a.active::before {
+  width: 100%;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(19, 136, 8, 0.05);
+}
+
+.navbar-toggle:hover {
+  background: rgba(19, 136, 8, 0.1);
+  transform: scale(1.05);
+}
+
+.navbar-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #138808;
+  margin: 3px 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+  transform-origin: center;
+}
+
+.navbar-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.navbar-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+@media (max-width: 1024px) {
+  .navbar-container {
+    height: 80px;
+    padding: 0 32px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.4rem;
+  }
+  
+  .navbar-logo img {
+    height: 60px;
+  }
+  
+  .navbar-menu {
+    gap: 25px;
+  }
+  
+  .navbar-menu a {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 60px;
+    padding: 0 24px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+  
+  .navbar-logo img {
+    height: 45px;
+  }
+  
+  .navbar-toggle {
+    display: flex;
+  }
+  
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 10px 40px rgba(19, 136, 8, 0.18);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 3px solid #138808;
+  }
+  
+  .navbar-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .navbar-menu li {
+    width: 100%;
+  }
+  
+  .navbar-menu a {
+    display: block;
+    padding: 15px 24px;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(19, 136, 8, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-menu a::before {
+    display: none;
+  }
+  
+  .navbar-menu a:hover {
+    background: rgba(19, 136, 8, 0.1);
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .navbar-menu a.active {
+    background: rgba(19, 136, 8, 0.15);
+    transform: none;
+    border-left: 4px solid #138808;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 15px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.1rem;
+    gap: 10px;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-menu a {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-toggle span {
+    width: 22px;
+    height: 2px;
+  }
+}
+
+/* Enhanced Animation for menu items */
+.navbar-menu li {
+  animation: fadeInDown 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(-15px);
+}
+
+.navbar-menu li:nth-child(1) { animation-delay: 0.1s; }
+.navbar-menu li:nth-child(2) { animation-delay: 0.2s; }
+.navbar-menu li:nth-child(3) { animation-delay: 0.3s; }
+.navbar-menu li:nth-child(4) { animation-delay: 0.4s; }
+.navbar-menu li:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced hover effects for mobile */
+@media (hover: hover) {
+  .navbar-menu a:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Focus states for accessibility */
+.navbar-menu a:focus,
+.navbar-toggle:focus {
+  outline: 2px solid #138808;
+  outline-offset: 2px;
+}
+
+/* Loading state */
+.navbar.loading {
+  pointer-events: none;
+  opacity: 0.8;
+} 

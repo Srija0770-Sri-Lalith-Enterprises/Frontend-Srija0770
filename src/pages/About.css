@@ -1,0 +1,523 @@
+/* About Hero */
+.about-hero {
+  background: #138808;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+/* Company Story */
+.company-story h2 {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #138808;
+}
+
+.company-story p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.company-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Facility Carousel */
+.facility-carousel {
+  background: #fafbfc;
+  padding: 60px 0;
+}
+
+.facility-carousel .section-title {
+  color: #138808;
+  margin-bottom: 20px;
+}
+
+.facility-carousel .section-subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Facility Gallery */
+.facility-gallery {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.facility-gallery .section-title {
+  color: #138808;
+  margin-bottom: 20px;
+}
+
+.facility-gallery .section-subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  background: #f7f7f7;
+}
+
+.mission-card, .vision-card {
+  text-align: center;
+  height: 100%;
+}
+
+.mission-card h3, .vision-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #138808;
+}
+
+.mission-card p, .vision-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Values */
+.value-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  font-size: 2.6rem;
+  color: #138808;
+  margin-bottom: 16px;
+}
+
+.value-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.value-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Achievements */
+.achievements {
+  background: #f54a4a !important;
+  color: #138808;
+}
+
+.achievements .section-title {
+  color: #fff !important;
+}
+
+.achievement-card {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.achievement-icon {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+  color: #ffff00;
+  opacity: 0.8;
+}
+
+.achievement-card h3 {
+  font-size: 2.1rem;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.achievement-card p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Team */
+.team-card {
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-image {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #138808;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  color: #222;
+}
+
+.position {
+  color: #138808;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.team-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background: #f7f7f7;
+}
+
+.why-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.why-item h4 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.why-item p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.why-image img {
+  width: 100%;
+  height: 320px;
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section {
+  padding: 100px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 80px 0;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero p {
+    font-size: 1rem;
+  }
+  
+  .company-story h2 {
+    font-size: 2rem;
+  }
+  
+  .achievement-card h3 {
+    font-size: 2rem;
+  }
+  
+  .why-content {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .company-story h2 {
+    font-size: 1.8rem;
+  }
+  
+  .achievement-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .team-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Animations */
+.value-card:hover .value-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.about-page {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8f0 100%);
+}
+
+.about-page .section {
+  padding: 100px 0;
+  background: #fff;
+  position: relative;
+}
+
+.about-page .about-hero {
+  background: linear-gradient(135deg, #138808 0%, #0f6b08 100%);
+  color: #fff;
+  position: relative;
+}
+
+.about-page .about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="about-pattern" width="30" height="30" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="30" height="30" fill="none" stroke="white" stroke-width="1" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23about-pattern)"/></svg>');
+  opacity: 0.2;
+}
+
+.about-page .section {
+  padding: 50px 0;
+  background: #fff;
+  position: relative;
+}
+
+.about-page .section-title {
+  color: #138808;
+  text-shadow: 0 2px 4px rgba(19, 136, 8, 0.1);
+}
+
+.about-page .section-title::after {
+  background: linear-gradient(90deg, #138808, #ffff00);
+  box-shadow: 0 4px 12px rgba(19, 136, 8, 0.4);
+}
+
+.about-page .card {
+  border-left: 6px solid #138808;
+  background: linear-gradient(135deg, #fff 0%, #f8fff8 100%);
+  box-shadow: 0 8px 25px rgba(19, 136, 8, 0.1);
+}
+
+.about-page .card:hover {
+  border-left-width: 8px;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(19, 136, 8, 0.2);
+}
+
+.about-page .value-icon {
+  background: linear-gradient(135deg, #ef2f2f, #e02424);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 4px 8px rgba(239, 47, 47, 0.3));
+}
+
+.about-page .cta-section {
+  background: linear-gradient(135deg, #138808 0%, #0f6b08 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-page .cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="home-cta-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><polygon points="25,0 50,25 25,50 0,25" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23home-cta-pattern)"/></svg>');
+  opacity: 0.2;
+}
+
+/* About Page Specific Elements */
+.about-page .about-hero-content h1 {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #fff, #f0f8f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-page .company-story h2 {
+  color: #138808;
+  border-bottom: 3px solid #138808;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about-page .facility-carousel {
+  background: linear-gradient(135deg, #f8fff8 0%, #ffffff 100%);
+  border-top: 3px solid #138808;
+  border-bottom: 3px solid #138808;
+}
+
+.about-page .facility-gallery {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8f0 100%);
+}
+
+.about-page .mission-card {
+  border-left: 6px solid #138808;
+  background: linear-gradient(135deg, #fff 0%, #f8fff8 100%);
+}
+
+.about-page .vision-card {
+  border-left: 6px solid #ef2f2f;
+  background: linear-gradient(135deg, #fff 0%, #fff8f8 100%);
+}
+
+.about-page .achievements {
+  background: linear-gradient(135deg, #f8fff8 0%, #ffffff 100%);
+  border-top: 3px solid #ffff00;
+  border-bottom: 3px solid #ffff00;
+}
+
+.about-page .achievement-card {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #fff 0%, #f8fff8 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(19, 136, 8, 0.1);
+  transition: all 0.3s ease;
+}
+
+.about-page .achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(19, 136, 8, 0.2);
+}
+
+.about-page .achievement-icon {
+  font-size: 3rem;
+  color: #ef2f2f;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 4px 8px rgba(239, 47, 47, 0.3));
+}
+
+.about-page .team-card {
+  text-align: center;
+  background: linear-gradient(135deg, #fff 0%, #f8fff8 100%);
+  border: 2px solid #138808;
+  transition: all 0.3s ease;
+}
+
+.about-page .team-card:hover {
+  border-color: #ef2f2f;
+  transform: translateY(-5px);
+}
+
+.about-page .team-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border: 4px solid #138808;
+}
+
+.about-page .team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-page .why-choose-us {
+  background: linear-gradient(135deg, #f0f8f0 0%, #ffffff 100%);
+  border-top: 3px solid #138808;
+  border-bottom: 3px solid #138808;
+}
+
+/* Page-Specific Animations */
+.about-page .card {
+  animation: fadeInScale 0.8s ease-out;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Page-Specific Hover Effects */
+.about-page .value-card:hover .value-icon {
+  transform: scale(1.2) rotate(-10deg);
+  filter: drop-shadow(0 6px 12px rgba(239, 47, 47, 0.4));
+}
+
+/* Page-Specific Loading Animations */
+.about-page .value-card {
+  animation: fadeInScale 0.8s ease-out;
+}
+
+/* Page-Specific Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-page .about-hero::before {
+    opacity: 0.1;
+  }
+  
+  .about-page .card {
+    margin-bottom: 20px;
+  }
+  
+  .about-page .team-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page .about-hero {
+    padding: 60px 0;
+  }
+  
+  .about-page .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-page .team-image {
+    width: 80px;
+    height: 80px;
+  }
+} 
