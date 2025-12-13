@@ -84,7 +84,7 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <FaMapMarkerAlt />
-                <span>D. No. 76-16-36, Urmila Nagar, Bhavanipuram, Vijayawada, Andhra Pradesh 520012</span>
+                <span>D. No. 76-16-36, Urmila Nagar, Bhavanipuram, Vijayawada, Andhra Pradesh - 520012</span>
               </div>
               <div className="contact-item">
                 <FaPhone />

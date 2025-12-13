@@ -372,7 +372,7 @@ const Contact = () => {
               Let's discuss how we can help you with your packaging needs. Contact us today for a free consultation.
             </p>
             <div className="cta-buttons">
-              <a href="tel:+919849331975" className="btn">Call Now</a>
+              <a href="tel:+917013404083" className="btn">Call Now</a>
               <a href="mailto:srilalithenterprises99@gmail.com" className="btn btn-secondary">Email Us</a>
             </div>
           </div>
