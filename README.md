@@ -3,8 +3,8 @@
 A modern, responsive website for Sri Lalith Enterprises, a leading BOPP tapes and packaging solutions provider.
 
 ## Live Demo
-- Frontend Website: https://srija0770-sri-lalith-enterprises.netlify.app/
-
+- Website: https://srija0770-sri-lalith-enterprises.netlify.app/
+- Backend API: https://backend-srija0770-sri-lalith-enterprises.onrender.com/
 ## Project Overview
 This website is designed to present the company’s products, services, and business profile in a clean, professional, and user-friendly format. It helps customers explore BOPP tapes, packaging materials, industrial products, and contact the business through a simple inquiry form.
 
