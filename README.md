@@ -180,9 +180,10 @@ If you get module not found errors:
 - Edge (latest)
 
 ## Author
+```
 Project Owner: MUNDRU SAI SRIJA
 GitHub: @Srija0770
 Role: Project Owner and Developer
-
+```
 ## License
 This project is proprietary to Sri Lalith Enterprises.
