@@ -2,14 +2,55 @@
 
 A modern, responsive website for Sri Lalith Enterprises, a leading BOPP tapes and packaging solutions provider.
 
-## Features
+## Live Demo
+- Frontend Website: https://srija0770-sri-lalith-enterprises.netlify.app/
 
+## Project Overview
+This website is designed to present the company’s products, services, and business profile in a clean, professional, and user-friendly format. It helps customers explore BOPP tapes, packaging materials, industrial products, and contact the business through a simple inquiry form.
+
+## Features
 - **Single Page Application (SPA)**: No page reloads when navigating between pages
-- **Responsive Design**: Works perfectly on all devices
-- **Modern UI**: Clean, professional design with smooth animations
-- **Fast Loading**: Optimized for performance
-- **SEO Friendly**: Proper meta tags and structure
-- **Real Product Images**: Using actual BOPP tape and packaging product images
+-  Responsive and mobile-friendly design
+- Modern single-page application flow
+- About page with company background
+- Products catalog for packaging solutions
+- Services section for manufacturing and industrial support
+- Contact page with inquiry form
+- Smooth scrolling and modern UI transitions
+- Professional branding for the business
+
+## Tech Stack - Frontend
+- React
+- Vite
+- React Router DOM
+- CSS3
+- JavaScript
+
+## Frontend Project Structure
+```
+Frontend/
+├── src/
+│   ├── components/     # Reusable components
+│   ├── pages/         # Page components
+│   ├── assets/        # Images and static files
+│   │   ├── logo.png   # Company logo
+│   │   ├── BOPP Tape (Transparent).png
+│   │   ├── BOPP Tape (Brown).png
+│   │   ├── BOPP Tapes (Colour).jpg
+│   │   ├── Aluminium-foil-tape.png
+│   │   ├── packaging products.jpg
+│   │   ├── Industrial tapes.jpg
+│   │   └── packaging tapes.jpg
+│   ├── App.jsx        # Main app component
+│   ├── App.css        # Global styles
+│   └── main.jsx       # Entry point
+├── public/            # Public assets
+├── index.html         # HTML template
+├── package.json       # Dependencies and scripts
+├── vite.config.js     # Vite configuration
+├── start-dev.bat      # Batch file for easy startup
+└── README.md          # This file
+```
 
 ## Getting Started
 
@@ -65,33 +106,6 @@ npm run build
 npm run preview
 ```
 
-## Project Structure
-
-```
-Frontend/
-├── src/
-│   ├── components/     # Reusable components
-│   ├── pages/         # Page components
-│   ├── assets/        # Images and static files
-│   │   ├── logo.png   # Company logo
-│   │   ├── BOPP Tape (Transparent).png
-│   │   ├── BOPP Tape (Brown).png
-│   │   ├── BOPP Tapes (Colour).jpg
-│   │   ├── Aluminium-foil-tape.png
-│   │   ├── packaging products.jpg
-│   │   ├── Industrial tapes.jpg
-│   │   └── packaging tapes.jpg
-│   ├── App.jsx        # Main app component
-│   ├── App.css        # Global styles
-│   └── main.jsx       # Entry point
-├── public/            # Public assets
-├── index.html         # HTML template
-├── package.json       # Dependencies and scripts
-├── vite.config.js     # Vite configuration
-├── start-dev.bat      # Batch file for easy startup
-└── README.md          # This file
-```
-
 ## Routing
 
 The application uses React Router for client-side routing. All navigation happens without page reloads:
@@ -103,9 +117,7 @@ The application uses React Router for client-side routing. All navigation happen
 - `/contact` - Contact page (Get in touch)
 
 ## Product Catalog
-
 The website showcases real BOPP tape products:
-
 - **BOPP Transparent Tape** - General packaging applications
 - **BOPP Brown Tape** - Heavy-duty packaging
 - **BOPP Colored Tapes** - Branded and decorative packaging
@@ -162,12 +174,15 @@ If you get module not found errors:
 - **CSS3** - Styling with modern features
 
 ## Browser Support
-
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-## License
+## Author
+Project Owner: MUNDRU SAI SRIJA
+GitHub: @Srija0770
+Role: Project Owner and Developer
 
+## License
 This project is proprietary to Sri Lalith Enterprises.
